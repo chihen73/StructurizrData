@@ -6,7 +6,7 @@
   "documentation" : { },
   "id" : 1,
   "lastModifiedAgent" : "structurizr-ui",
-  "lastModifiedDate" : "2025-12-26T14:10:50Z",
+  "lastModifiedDate" : "2025-12-26T14:12:35Z",
   "model" : {
     "people" : [ {
       "description" : "End user who performs data querying, analysis, and data management operations",

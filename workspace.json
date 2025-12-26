@@ -6,7 +6,7 @@
   "documentation" : { },
   "id" : 1,
   "lastModifiedAgent" : "structurizr-ui",
-  "lastModifiedDate" : "2025-12-26T08:56:53Z",
+  "lastModifiedDate" : "2025-12-26T09:12:25Z",
   "model" : {
     "people" : [ {
       "description" : "End user who performs data querying, analysis, and data management operations",
@@ -20,19 +20,22 @@
         "destinationId" : "3",
         "id" : "6",
         "sourceId" : "1",
-        "tags" : "Relationship"
+        "tags" : "Relationship",
+        "technology" : "HTTP"
       }, {
         "description" : "Interaction to be defined",
         "destinationId" : "4",
         "id" : "8",
         "sourceId" : "1",
-        "tags" : "Relationship"
+        "tags" : "Relationship",
+        "technology" : "HTTP"
       }, {
         "description" : "Interaction to be defined",
         "destinationId" : "5",
         "id" : "9",
         "sourceId" : "1",
-        "tags" : "Relationship"
+        "tags" : "Relationship",
+        "technology" : "HTTP"
       } ],
       "tags" : "Element,Person"
     } ],
@@ -49,19 +52,22 @@
         "destinationId" : "3",
         "id" : "11",
         "sourceId" : "2",
-        "tags" : "Relationship"
+        "tags" : "Relationship",
+        "technology" : "REST API"
       }, {
         "description" : "Queries data",
         "destinationId" : "4",
         "id" : "13",
         "sourceId" : "2",
-        "tags" : "Relationship"
+        "tags" : "Relationship",
+        "technology" : "Python Client"
       }, {
         "description" : "Queries data",
         "destinationId" : "5",
         "id" : "15",
         "sourceId" : "2",
-        "tags" : "Relationship"
+        "tags" : "Relationship",
+        "technology" : "C# Client"
       } ],
       "tags" : "Element,Software System,Database"
     }, {
@@ -77,13 +83,15 @@
         "destinationId" : "1",
         "id" : "7",
         "sourceId" : "3",
-        "tags" : "Relationship"
+        "tags" : "Relationship",
+        "technology" : "HTTP"
       }, {
         "description" : "Performs data analysis and database administration",
         "destinationId" : "2",
         "id" : "10",
         "sourceId" : "3",
-        "tags" : "Relationship"
+        "tags" : "Relationship",
+        "technology" : "REST API"
       } ],
       "tags" : "Element,Software System"
     }, {
@@ -99,7 +107,8 @@
         "destinationId" : "2",
         "id" : "12",
         "sourceId" : "4",
-        "tags" : "Relationship"
+        "tags" : "Relationship",
+        "technology" : "Python Client"
       } ],
       "tags" : "Element,Software System"
     }, {
@@ -115,7 +124,8 @@
         "destinationId" : "2",
         "id" : "14",
         "sourceId" : "5",
-        "tags" : "Relationship"
+        "tags" : "Relationship",
+        "technology" : "C# Client"
       } ],
       "tags" : "Element,Software System"
     } ]
@@ -124,9 +134,9 @@
   "properties" : {
     "structurizr.inspection.info" : "0",
     "structurizr.inspection.ignore" : "0",
-    "structurizr.inspection.error" : "10",
+    "structurizr.inspection.error" : "0",
     "structurizr.inspection.warning" : "0",
-    "structurizr.dsl" : "d29ya3NwYWNlICJTeXN0ZW0gWCIgIlN5c3RlbSBMYW5kc2NhcGUgRGlhZ3JhbSBiYXNlZCBvbiBza2V0Y2giIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCiMjIyB0ZXN0CiAgICBtb2RlbCB7CgogICAgICAgIHVzZXIgPSBwZXJzb24gIlVzZXIiIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIkVuZCB1c2VyIHdobyBwZXJmb3JtcyBkYXRhIHF1ZXJ5aW5nLCBhbmFseXNpcywgYW5kIGRhdGEgbWFuYWdlbWVudCBvcGVyYXRpb25zIgogICAgICAgIH0KCiAgICAgICAgaW5mbHV4ZGIgPSBzb2Z0d2FyZVN5c3RlbSAiSW5mbHV4REIgMyBDb3JlIiB7CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJDb3JlIHRpbWUtc2VyaWVzIGRhdGFiYXNlIHN5c3RlbSIKICAgICAgICAgICAgdGFncyAiRGF0YWJhc2UiCiAgICAgICAgfQoKICAgICAgICBleHBsb3JlciA9IHNvZnR3YXJlU3lzdGVtICJJbmZsdXhEQiBFeHBsb3JlciIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiV2ViLWJhc2VkIHVzZXIgaW50ZXJmYWNlIGZvciBJbmZsdXhEQiwgcHJvdmlkaW5nIGRhdGEgZXhwbG9yYXRpb24sIHF1ZXJ5aW5nLCBhbmQgYWRtaW5pc3RyYXRpdmUgY2FwYWJpbGl0aWVzIgogICAgICAgIH0KCiAgICAgICAgZm9ybXVjdXQgPSBzb2Z0d2FyZVN5c3RlbSAiRm9ybXVDdXQiIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIkRlc2NyaXB0aW9uIHRvIGJlIGRlZmluZWQiCiAgICAgICAgfQoKICAgICAgICBjbGFpcnZveWFuY2UgPSBzb2Z0d2FyZVN5c3RlbSAiQ2xhaXJ2b3lhbmNlIiB7CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJEZXNjcmlwdGlvbiB0byBiZSBkZWZpbmVkIgogICAgICAgIH0KCiAgICAgICAgdXNlciAtPiBleHBsb3JlciAiUGVyZm9ybXMgZGF0YSBxdWVyeWluZywgYW5hbHlzaXMsIGFuZCBhZG1pbmlzdHJhdGl2ZSB0YXNrcyIKICAgICAgICBleHBsb3JlciAtPiB1c2VyICJEaXNwbGF5cyBkYXRhLCBhbmFseXNpcyByZXN1bHRzLCBhbmQgbWFuYWdlbWVudCBtZXNzYWdlcyIKICAgICAgICB1c2VyIC0+IGZvcm11Y3V0ICJJbnRlcmFjdGlvbiB0byBiZSBkZWZpbmVkIgogICAgICAgIHVzZXIgLT4gY2xhaXJ2b3lhbmNlICJJbnRlcmFjdGlvbiB0byBiZSBkZWZpbmVkIgoKICAgICAgICBleHBsb3JlciAtPiBpbmZsdXhkYiAiUGVyZm9ybXMgZGF0YSBhbmFseXNpcyBhbmQgZGF0YWJhc2UgYWRtaW5pc3RyYXRpb24iCiAgICAgICAgaW5mbHV4ZGIgLT4gZXhwbG9yZXIgIlJlc3BvbmRzIHdpdGggZGF0YSBvciBtYW5hZ2VtZW50IG1lc3NhZ2VzIgogICAgICAgIGZvcm11Y3V0IC0+IGluZmx1eGRiICJXcml0ZXMgZGF0YSIKICAgICAgICBpbmZsdXhkYiAtPiBmb3JtdWN1dCAiUXVlcmllcyBkYXRhIgoKICAgICAgICBjbGFpcnZveWFuY2UgLT4gaW5mbHV4ZGIgIldyaXRlcyBkYXRhIgogICAgICAgIGluZmx1eGRiIC0+IGNsYWlydm95YW5jZSAiUXVlcmllcyBkYXRhIgogICAgfQoKICAgIHZpZXdzIHsKCiAgICAgICAgc3lzdGVtTGFuZHNjYXBlICJTeXN0ZW1MYW5kc2NhcGUiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgbHIKICAgICAgICB9CgogICAgICAgIHN0eWxlcyB7CgogICAgICAgICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICAgICAgICAgIHNoYXBlIHBlcnNvbgogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjMDM1YThkCiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIlNvZnR3YXJlIFN5c3RlbSIgewogICAgICAgICAgICAgICAgc2hhcGUgcm91bmRlZGJveAogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjMTE2OGJkCiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGVsZW1lbnQgIkRhdGFiYXNlIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBjeWxpbmRlcgogICAgICAgICAgICB9CgogICAgICAgICAgICByZWxhdGlvbnNoaXAgIlJlbGF0aW9uc2hpcCIgewogICAgICAgICAgICAgICAgdGhpY2tuZXNzIDQKICAgICAgICAgICAgfQoKICAgICAgICB9CiAgICB9CgogICAgY29uZmlndXJhdGlvbiB7CiAgICAgICAgc2NvcGUgIlNvZnR3YXJlU3lzdGVtIgogICAgfQp9"
+    "structurizr.dsl" : "d29ya3NwYWNlICJTeXN0ZW0gWCIgIlN5c3RlbSBMYW5kc2NhcGUgRGlhZ3JhbSBiYXNlZCBvbiBza2V0Y2giIHsKCiAgICAhaWRlbnRpZmllcnMgaGllcmFyY2hpY2FsCgogICAgbW9kZWwgewoKICAgICAgICB1c2VyID0gcGVyc29uICJVc2VyIiB7CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJFbmQgdXNlciB3aG8gcGVyZm9ybXMgZGF0YSBxdWVyeWluZywgYW5hbHlzaXMsIGFuZCBkYXRhIG1hbmFnZW1lbnQgb3BlcmF0aW9ucyIKICAgICAgICB9CgogICAgICAgIGluZmx1eGRiID0gc29mdHdhcmVTeXN0ZW0gIkluZmx1eERCIDMgQ29yZSIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiQ29yZSB0aW1lLXNlcmllcyBkYXRhYmFzZSBzeXN0ZW0iCiAgICAgICAgICAgIHRhZ3MgIkRhdGFiYXNlIgogICAgICAgIH0KCiAgICAgICAgZXhwbG9yZXIgPSBzb2Z0d2FyZVN5c3RlbSAiSW5mbHV4REIgRXhwbG9yZXIiIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIldlYi1iYXNlZCB1c2VyIGludGVyZmFjZSBmb3IgSW5mbHV4REIsIHByb3ZpZGluZyBkYXRhIGV4cGxvcmF0aW9uLCBxdWVyeWluZywgYW5kIGFkbWluaXN0cmF0aXZlIGNhcGFiaWxpdGllcyIKICAgICAgICB9CgogICAgICAgIGZvcm11Y3V0ID0gc29mdHdhcmVTeXN0ZW0gIkZvcm11Q3V0IiB7CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJEZXNjcmlwdGlvbiB0byBiZSBkZWZpbmVkIgogICAgICAgIH0KCiAgICAgICAgY2xhaXJ2b3lhbmNlID0gc29mdHdhcmVTeXN0ZW0gIkNsYWlydm95YW5jZSIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiRGVzY3JpcHRpb24gdG8gYmUgZGVmaW5lZCIKICAgICAgICB9CgogICAgICAgIHVzZXIgLT4gZXhwbG9yZXIgIlBlcmZvcm1zIGRhdGEgcXVlcnlpbmcsIGFuYWx5c2lzLCBhbmQgYWRtaW5pc3RyYXRpdmUgdGFza3MiICJIVFRQIgogICAgICAgIGV4cGxvcmVyIC0+IHVzZXIgIkRpc3BsYXlzIGRhdGEsIGFuYWx5c2lzIHJlc3VsdHMsIGFuZCBtYW5hZ2VtZW50IG1lc3NhZ2VzIiAiSFRUUCIKICAgICAgICB1c2VyIC0+IGZvcm11Y3V0ICJJbnRlcmFjdGlvbiB0byBiZSBkZWZpbmVkIiAiSFRUUCIKICAgICAgICB1c2VyIC0+IGNsYWlydm95YW5jZSAiSW50ZXJhY3Rpb24gdG8gYmUgZGVmaW5lZCIgIkhUVFAiCgogICAgICAgIGV4cGxvcmVyIC0+IGluZmx1eGRiICJQZXJmb3JtcyBkYXRhIGFuYWx5c2lzIGFuZCBkYXRhYmFzZSBhZG1pbmlzdHJhdGlvbiIgIlJFU1QgQVBJIgogICAgICAgIGluZmx1eGRiIC0+IGV4cGxvcmVyICJSZXNwb25kcyB3aXRoIGRhdGEgb3IgbWFuYWdlbWVudCBtZXNzYWdlcyIgIlJFU1QgQVBJIgogICAgICAgIGZvcm11Y3V0IC0+IGluZmx1eGRiICJXcml0ZXMgZGF0YSIgIlB5dGhvbiBDbGllbnQiCiAgICAgICAgaW5mbHV4ZGIgLT4gZm9ybXVjdXQgIlF1ZXJpZXMgZGF0YSIgIlB5dGhvbiBDbGllbnQiCgogICAgICAgIGNsYWlydm95YW5jZSAtPiBpbmZsdXhkYiAiV3JpdGVzIGRhdGEiICJDIyBDbGllbnQiCiAgICAgICAgaW5mbHV4ZGIgLT4gY2xhaXJ2b3lhbmNlICJRdWVyaWVzIGRhdGEiICJDIyBDbGllbnQiCiAgICB9CgogICAgdmlld3MgewoKICAgICAgICBzeXN0ZW1MYW5kc2NhcGUgIlN5c3RlbUxhbmRzY2FwZSIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dCBsciA4MDAgODAwCiAgICAgICAgfQoKICAgICAgICBzdHlsZXMgewoKICAgICAgICAgICAgZWxlbWVudCAiUGVyc29uIiB7CiAgICAgICAgICAgICAgICBzaGFwZSBwZXJzb24KICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzAzNWE4ZAogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGVtZW50ICJTb2Z0d2FyZSBTeXN0ZW0iIHsKICAgICAgICAgICAgICAgIHNoYXBlIHJvdW5kZWRib3gKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzExNjhiZAogICAgICAgICAgICAgICAgY29sb3IgI2ZmZmZmZgogICAgICAgICAgICB9CgogICAgICAgICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgc2hhcGUgY3lsaW5kZXIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgcmVsYXRpb25zaGlwICJSZWxhdGlvbnNoaXAiIHsKICAgICAgICAgICAgICAgIHRoaWNrbmVzcyA0CiAgICAgICAgICAgIH0KCiAgICAgICAgfQogICAgfQoKICAgIGNvbmZpZ3VyYXRpb24gewogICAgICAgIHNjb3BlICJTb2Z0d2FyZVN5c3RlbSIKICAgIH0KfQ=="
   },
   "views" : {
     "configuration" : {
@@ -160,35 +170,35 @@
         "applied" : true,
         "edgeSeparation" : 0,
         "implementation" : "Graphviz",
-        "nodeSeparation" : 300,
+        "nodeSeparation" : 800,
         "rankDirection" : "LeftRight",
-        "rankSeparation" : 300,
+        "rankSeparation" : 800,
         "vertices" : false
       },
       "dimensions" : {
-        "height" : 1300,
-        "width" : 3050
+        "height" : 1800,
+        "width" : 4550
       },
       "elements" : [ {
         "id" : "1",
-        "x" : 199,
-        "y" : 409
+        "x" : 200,
+        "y" : 660
       }, {
         "id" : "2",
-        "x" : 1649,
-        "y" : 459
+        "x" : 2650,
+        "y" : 710
       }, {
         "id" : "3",
-        "x" : 899,
-        "y" : 459
+        "x" : 1400,
+        "y" : 710
       }, {
         "id" : "4",
-        "x" : 2399,
-        "y" : 159
+        "x" : 3900,
+        "y" : 160
       }, {
         "id" : "5",
-        "x" : 2399,
-        "y" : 759
+        "x" : 3900,
+        "y" : 1260
       } ],
       "enterpriseBoundaryVisible" : true,
       "key" : "SystemLandscape",
@@ -197,62 +207,62 @@
       "relationships" : [ {
         "id" : "10",
         "vertices" : [ {
-          "x" : 1499,
-          "y" : 759
+          "x" : 2250,
+          "y" : 1010
         } ]
       }, {
         "id" : "11",
         "vertices" : [ {
-          "x" : 1499,
-          "y" : 459
+          "x" : 2250,
+          "y" : 710
         } ]
       }, {
         "id" : "12",
         "vertices" : [ {
-          "x" : 2193,
-          "y" : 319
+          "x" : 3439,
+          "y" : 447
         } ]
       }, {
         "id" : "13",
         "vertices" : [ {
-          "x" : 2304,
-          "y" : 598
+          "x" : 3560,
+          "y" : 722
         } ]
       }, {
         "id" : "14",
         "vertices" : [ {
-          "x" : 2304,
-          "y" : 619
+          "x" : 3560,
+          "y" : 997
         } ]
       }, {
         "id" : "15",
         "vertices" : [ {
-          "x" : 2193,
-          "y" : 898
+          "x" : 3439,
+          "y" : 1272
         } ]
       }, {
         "id" : "6",
         "vertices" : [ {
-          "x" : 761,
-          "y" : 759
+          "x" : 1012,
+          "y" : 1010
         } ]
       }, {
         "id" : "7",
         "vertices" : [ {
-          "x" : 761,
-          "y" : 459
+          "x" : 1012,
+          "y" : 710
         } ]
       }, {
         "id" : "8",
         "vertices" : [ {
-          "x" : 899,
-          "y" : 309
+          "x" : 1400,
+          "y" : 310
         } ]
       }, {
         "id" : "9",
         "vertices" : [ {
-          "x" : 899,
-          "y" : 909
+          "x" : 1400,
+          "y" : 1410
         } ]
       } ]
     } ]

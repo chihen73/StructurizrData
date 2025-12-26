@@ -1,7 +1,7 @@
 workspace "System X" "System Landscape Diagram based on sketch" {
 
     !identifiers hierarchical
-### test
+
     model {
 
         user = person "User" {
@@ -25,25 +25,25 @@ workspace "System X" "System Landscape Diagram based on sketch" {
             description "Description to be defined"
         }
 
-        user -> explorer "Performs data querying, analysis, and administrative tasks"
-        explorer -> user "Displays data, analysis results, and management messages"
-        user -> formucut "Interaction to be defined"
-        user -> clairvoyance "Interaction to be defined"
+        user -> explorer "Performs data querying, analysis, and administrative tasks" "HTTP"
+        explorer -> user "Displays data, analysis results, and management messages" "HTTP"
+        user -> formucut "Interaction to be defined" "HTTP"
+        user -> clairvoyance "Interaction to be defined" "HTTP"
 
-        explorer -> influxdb "Performs data analysis and database administration"
-        influxdb -> explorer "Responds with data or management messages"
-        formucut -> influxdb "Writes data"
-        influxdb -> formucut "Queries data"
+        explorer -> influxdb "Performs data analysis and database administration" "REST API"
+        influxdb -> explorer "Responds with data or management messages" "REST API"
+        formucut -> influxdb "Writes data" "Python Client"
+        influxdb -> formucut "Queries data" "Python Client"
 
-        clairvoyance -> influxdb "Writes data"
-        influxdb -> clairvoyance "Queries data"
+        clairvoyance -> influxdb "Writes data" "C# Client"
+        influxdb -> clairvoyance "Queries data" "C# Client"
     }
 
     views {
 
         systemLandscape "SystemLandscape" {
             include *
-            autolayout lr
+            autolayout lr 800 800
         }
 
         styles {

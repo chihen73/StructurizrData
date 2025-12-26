@@ -8,7 +8,7 @@ workspace "System X" "System Landscape Diagram based on sketch" {
             description "End user who performs data querying, analysis, and data management operations"
         }
 
-        influxdb = softwareSystem "InfluxDB 3 Core 測試測試" {
+        influxdb = softwareSystem "InfluxDB 3 Core" {
             description "Core time-series database system"
             tags "Database"
         }

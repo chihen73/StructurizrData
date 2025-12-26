@@ -13,7 +13,7 @@ workspace "System X" "System Landscape Diagram based on sketch" {
             tags "Database"
         }
 
-        explorer = softwareSystem "InfluxDB Explorer(HTTP)" {
+        explorer = softwareSystem "InfluxDB Explorer(測試)" {
             description "Web-based user interface for InfluxDB, providing data exploration, querying, and administrative capabilities"
         }
 
@@ -30,7 +30,7 @@ workspace "System X" "System Landscape Diagram based on sketch" {
         user -> formucut "Interaction to be defined" "HTTP"
         user -> clairvoyance "Interaction to be defined" "HTTP"
 
-        explorer -> influxdb "Performs data analysis and database administration" "REST API"
+        explorer -> influxdb "Performs data analysis and database administration 測試" "REST API"
         influxdb -> explorer "Responds with data or management messages" "REST API"
         formucut -> influxdb "Writes data" "Python Client"
         influxdb -> formucut "Queries data" "Python Client"

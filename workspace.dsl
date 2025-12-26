@@ -13,7 +13,7 @@ workspace "System X" "System Landscape Diagram based on sketch" {
             tags "Database"
         }
 
-        explorer = softwareSystem "InfluxDB Explorer" {
+        explorer = softwareSystem "InfluxDB Explorer(HTTP)" {
             description "Web-based user interface for InfluxDB, providing data exploration, querying, and administrative capabilities"
         }
 
